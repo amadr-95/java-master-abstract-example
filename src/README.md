@@ -1,4 +1,4 @@
-# NumberExtractorReport
+# ExtractorReport
 This class allow us to extract only the data from the file 
 that matches a given pattern, which in this case
 is for phone numbers.

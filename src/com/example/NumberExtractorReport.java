@@ -5,7 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-public class NumberExtractorReport {
+abstract public class NumberExtractorReport {
+
 
     private String parse(String path) throws FileNotFoundException {
         Pattern pattern = Pattern.compile("^[0-9]*$"); //phone pattern

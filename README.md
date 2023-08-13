@@ -1,5 +1,5 @@
 # ExtractorReport
-![img.png](resources/img.png)
+![img.png](src/resources/img.png)
 
 By making this class abstract we can define these methods:
 

@@ -7,15 +7,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ExtractorReport phoneNumbers = new PhoneReport();
-        ExtractorReport emails = new EmailReport();
-        ExtractorReport names = new NameReport();
+        ExtractorReport[] reports = {
+                new PhoneReport(),
+                new EmailReport(),
+                new NameReport()
+        };
+
         try {
-            phoneNumbers.sendReport(path);
-            System.out.println();
-            emails.sendReport(path);
-            System.out.println();
-            names.sendReport(path);
+            for (ExtractorReport report : reports) {
+                report.sendReport(path);
+                System.out.println();
+            }
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         }

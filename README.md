@@ -13,6 +13,6 @@ This approach is a much better implementation because it:
 - Encapsulate a common functionality in one place
 - Let subclasses implement specific body methods for their purposes
 
-![img.png](resources/img.png)
+![img.png](src/resources/img.png)
 
 To see that implementation change to branch _abstract_

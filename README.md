@@ -15,4 +15,4 @@ This approach is a much better implementation because it:
 
 ![img.png](src/resources/img.png)
 
-To see that implementation change to branch _abstract_
+To see that implementation change to branch [_abstract_](https://github.com/amadr-95/java-master-abstract-example/tree/abstract)

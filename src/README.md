@@ -1,18 +1,15 @@
 # ExtractorReport
-This class allow us to extract only the data from the file 
-that matches a given pattern, which in this case
-is for phone numbers.
+![img.png](resources/img.png)
 
-However, we can enhance this class by making it **abstract**. 
-This class will implement an abstract method that will be filled in 
-by subclasses depending on the type of data required to be reported 
-(phone numbers, emails, names, etc.). 
-This approach is a much better implementation because it:
-- Avoid code duplication
-- Increases resusability
-- Encapsulate a common functionality in one place
-- Let subclasses implement specific body methods for their purposes
+By making this class abstract we can define these methods:
 
-![img.png](resources%2Fimg.png)
+`public abstract Pattern getPattern();`
 
-To see that implementation change to branch _abstract_
+`public abstract String getReportName();`
+
+By doing so, the method `public String parse(String path)`
+can now receive the _pattern_ and the _reportName_ to personalise the output.
+
+Now, we only have to create _Email, Phone, Names,_ etc classes, make them extends
+from the _ExtractorReport_ and override the methods.
+

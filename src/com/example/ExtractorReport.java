@@ -5,11 +5,13 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-abstract public class NumberExtractorReport {
+abstract public class ExtractorReport {
 
+    public abstract Pattern getPattern();
+
+    public abstract String getReportName();
 
     private String parse(String path) throws FileNotFoundException {
-        Pattern pattern = Pattern.compile("^[0-9]*$"); //phone pattern
         StringBuilder str = new StringBuilder();
         File file = new File(path);
         Scanner sc = new Scanner(file);
@@ -20,8 +22,8 @@ abstract public class NumberExtractorReport {
         String line;
         while (sc.hasNext()) {
             line = sc.nextLine();
-            if(pattern.matcher(line).matches()){
-                if(str.isEmpty())
+            if (getPattern().matcher(line).matches()) {
+                if (str.isEmpty())
                     str.append(line);
                 else
                     str.append("\n").append(line);
@@ -31,7 +33,7 @@ abstract public class NumberExtractorReport {
     }
 
     public void sendReport(String path) throws FileNotFoundException {
-        System.out.println("Preparing report...");
+        System.out.println("Preparing report for: " + getReportName());
         String report = parse(path);
         System.out.println(report);
     }

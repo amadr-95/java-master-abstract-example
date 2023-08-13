@@ -1,8 +1,8 @@
 # This file contains different kinds of data
 Amador
-Sandra
+Manuel
 example@example.com
 00654897345
 hello@example.com
-00789546347
+789546347
 Javi

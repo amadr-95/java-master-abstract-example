@@ -13,6 +13,6 @@ This approach is a much better implementation because it:
 - Encapsulate a common functionality in one place
 - Let subclasses implement specific body methods for their purposes
 
-![img.png](src/resources/img.png)
+![img](https://github.com/amadr-95/java-master-abstract-example/assets/122611230/f7eeae1b-6ae3-48eb-b0d7-f9815e00a455)
 
 To see that implementation change to branch [_abstract_](https://github.com/amadr-95/java-master-abstract-example/tree/abstract)

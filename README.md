@@ -1,5 +1,5 @@
 # ExtractorReport
-![img.png](src/resources/img.png)
+![img](https://github.com/amadr-95/java-master-abstract-example/assets/122611230/fcff82a5-6ef4-4601-9475-cd5228b8191e)
 
 By making this class abstract we can define these methods:
 
